@@ -1,0 +1,51 @@
+<html lang="fr">
+
+<head>
+    <title>
+        oussema
+    </title>
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+</head>
+
+<body>
+    <div id='root'>
+        aaaaaaaaaaa
+    </div>
+    <script type="text/babel">
+        function App() {
+            const Mystyle={
+                color:"",
+                fontsize:100
+            }
+            const date = new Date();
+            const heure = date.getHours();
+            let a = '';
+            if (heure > 5 && heure < 12) {
+                a = 'bonjour'
+                Mystyle.color="#04567F"
+            } else if (heure >= 12 && heure <= 19) {
+                a = 'bonne apres midi'
+                Mystyle.color="#0914A3"
+            } else {
+                a = 'bonne nuit'
+                Mystyle.color="#D90000"
+            }
+            return (
+                <div className="App">
+                    <h1 style={Mystyle}>{a}</h1>
+                </div>
+            );
+        }
+
+
+        ReactDOM.render(<App/>,document.getElementById('root'));
+
+
+
+    </script>
+</body>
+
+</html>

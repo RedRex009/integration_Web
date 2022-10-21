@@ -1,0 +1,37 @@
+<html lang="fr">
+
+<head>
+    <title>
+        oussema
+    </title>
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+</head>
+
+<body>
+    <div id='root'>
+        aaaaaaaaaaa 
+    </div>
+    <script type="text/babel">
+        const apprenant = {
+            nomApprenant: 'foulen',
+            prenomApprenant: 'ben foulen'
+        };
+        
+
+        class NomComposant extends React.Component {
+            render() {
+                return <strong>Bonne Decouverte de React </strong>
+            }
+        }
+        
+        ReactDOM.render(
+            <NomComposant saisie="foulen ben foulen"/>,
+            document.getElementById("root")
+        );
+    </script>
+</body>
+
+</html>
